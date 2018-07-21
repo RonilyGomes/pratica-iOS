@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		14151BC1210352C400066566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14151BC0210352C400066566 /* AppDelegate.swift */; };
-		14151BC3210352C400066566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14151BC2210352C400066566 /* ViewController.swift */; };
+		14151BC3210352C400066566 /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14151BC2210352C400066566 /* SobreViewController.swift */; };
 		14151BC6210352C400066566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14151BC4210352C400066566 /* Main.storyboard */; };
 		14151BC8210352C700066566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14151BC7210352C700066566 /* Assets.xcassets */; };
 		14151BCB210352C700066566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14151BC9210352C700066566 /* LaunchScreen.storyboard */; };
+		14151BD6210355D900066566 /* Heroi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14151BD5210355D900066566 /* Heroi.swift */; };
+		14151BD82103569F00066566 /* Cadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14151BD72103569F00066566 /* Cadastro.swift */; };
+		14151BDA2103572200066566 /* ListarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14151BD92103572200066566 /* ListarTableViewController.swift */; };
+		14151BDC2103579300066566 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14151BDB2103579300066566 /* FormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14151BBD210352C400066566 /* liga da justica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "liga da justica.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14151BC0210352C400066566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14151BC2210352C400066566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14151BC2210352C400066566 /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
 		14151BC5210352C400066566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14151BC7210352C700066566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14151BCA210352C700066566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14151BCC210352C700066566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14151BD5210355D900066566 /* Heroi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroi.swift; sourceTree = "<group>"; };
+		14151BD72103569F00066566 /* Cadastro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cadastro.swift; sourceTree = "<group>"; };
+		14151BD92103572200066566 /* ListarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListarTableViewController.swift; sourceTree = "<group>"; };
+		14151BDB2103579300066566 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		14151BBF210352C400066566 /* liga da justica */ = {
 			isa = PBXGroup;
 			children = (
+				14151BD42103557C00066566 /* view */,
+				14151BD32103557600066566 /* model */,
+				14151BD22103555E00066566 /* controller */,
 				14151BC0210352C400066566 /* AppDelegate.swift */,
-				14151BC2210352C400066566 /* ViewController.swift */,
-				14151BC4210352C400066566 /* Main.storyboard */,
 				14151BC7210352C700066566 /* Assets.xcassets */,
 				14151BC9210352C700066566 /* LaunchScreen.storyboard */,
 				14151BCC210352C700066566 /* Info.plist */,
 			);
 			path = "liga da justica";
+			sourceTree = "<group>";
+		};
+		14151BD22103555E00066566 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				14151BC2210352C400066566 /* SobreViewController.swift */,
+				14151BD92103572200066566 /* ListarTableViewController.swift */,
+				14151BDB2103579300066566 /* FormViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		14151BD32103557600066566 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				14151BD5210355D900066566 /* Heroi.swift */,
+				14151BD72103569F00066566 /* Cadastro.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		14151BD42103557C00066566 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				14151BC4210352C400066566 /* Main.storyboard */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14151BC3210352C400066566 /* ViewController.swift in Sources */,
+				14151BDC2103579300066566 /* FormViewController.swift in Sources */,
+				14151BC3210352C400066566 /* SobreViewController.swift in Sources */,
 				14151BC1210352C400066566 /* AppDelegate.swift in Sources */,
+				14151BD82103569F00066566 /* Cadastro.swift in Sources */,
+				14151BDA2103572200066566 /* ListarTableViewController.swift in Sources */,
+				14151BD6210355D900066566 /* Heroi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
